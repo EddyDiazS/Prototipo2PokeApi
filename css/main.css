@@ -2,26 +2,26 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Establece la altura mínima del cuerpo al 100% del viewport */
+    min-height: 100vh; 
     background-image: url('pngtree-bunch-of-pokemon-balls-are-sitting-on-a-table-picture-image_2695766.jpg');
-    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir completamente */
-    background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
-    position: relative; /* Agregamos posición relativa para permitir superposiciones */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    position: relative; 
 }
 
 
-/* Estilos de la Barra de Búsqueda */
+
 .search-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px;
-    background-color: wheat; /* Rojo similar al de Pokémon */
+    background-color: wheat; 
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Distribuir los elementos horizontalmente */
+    justify-content: space-between;
     z-index: 999;
 }
 
@@ -39,20 +39,20 @@ body {
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #ffcc00; /* Amarillo similar al de Pokémon */
-    color: #000; /* Letra negra */
+    background-color: #ffcc00; 
+    color: #000; 
     cursor: pointer;
     transition: background-color 0.3s;
     font-size: 16px;
-    margin-left: 10px; /* Aumentar el espacio entre los botones */
+    margin-left: 10px; 
 }
 
 .search-container button:hover {
-    background-color: #ffdb4d; /* Amarillo más claro al hacer hover */
+    background-color: #ffdb4d;
 }
 
 
-/* Estilos de la Información del Pokémon */
+
 .pokemon-info {
     max-width: 800px;
     margin-top: 100px;
@@ -62,22 +62,22 @@ body {
 }
 .card {
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
     margin-bottom: 40px;
-    background-color:wheat; /* Fondo negro */
-    border: 6px solid #000; /* Borde negro de 4px */
-    transition: transform 0.3s ease; /* Transición suave */
+    background-color:wheat; 
+    border: 6px solid #000; 
+    transition: transform 0.3s ease; 
 }
 
 .card:hover {
-    transform: translateY(-5px); /* Levantar ligeramente al hacer hover */
+    transform: translateY(-5px); 
 }
 
 .imagen {
     text-align: center;
     position: relative;
-    border-top: 6px solid #333; /* Línea de división más gruesa */
+    border-top: 6px solid #333; 
 }
 
 .imagen img {
@@ -85,7 +85,7 @@ body {
     height: auto;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave para la imagen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .info-container {
@@ -144,88 +144,85 @@ body {
     margin-bottom: 20px;
 }
 
-/* Estilos mejorados para las barras de estadísticas */
-/* Estilos mejorados para las barras de estadísticas */
+
 .stat-bar {
-    height: 30px; /* Aumentamos la altura de la barra */
+    height: 30px; 
     border-radius: 5px;
-    margin-bottom: 10px; /* Incrementamos el margen inferior para mayor separación entre barras */
+    margin-bottom: 10px; 
     display: flex;
     align-items: center;
-    position: relative; /* Añadimos posicionamiento relativo para los elementos internos */
-    overflow: hidden; /* Ocultar el desbordamiento para la animación */
+    position: relative; 
+    overflow: hidden; 
 }
 
 .stat-fill {
-    height: 100%; /* Añadimos altura para que la barra de relleno se muestre */
+    height: 100%; 
     border-radius: 5px;
-    transition: width 0.5s ease-in-out; /* Agregamos transición para el cambio de ancho */
-    width: 0; /* Inicialmente establecemos el ancho como 0 para la animación */
+    transition: width 0.5s ease-in-out; 
+    width: 0; 
 }
 
 .stat-label {
-    font-size: 16px; /* Aumentamos el tamaño de la fuente del nombre */
+    font-size: 16px;
     color: #333;
 }
 
-/* Colores mejorados para las barras de estadísticas */
 .stat-hp .stat-fill {
-    background-color: rgba(76, 175, 80, 0.7); /* Verde con opacidad */
+    background-color: rgba(76, 175, 80, 0.7);
 }
 
 .stat-attack .stat-fill {
-    background-color: rgba(255, 0, 0, 0.7); /* Rojo con opacidad */
+    background-color: rgba(255, 0, 0, 0.7); 
 }
 
 .stat-defense .stat-fill {
-    background-color: rgba(135, 206, 250, 0.7); /* Azul claro con opacidad */
+    background-color: rgba(135, 206, 250, 0.7); 
 }
 
 .stat-special-attack .stat-fill {
-    background-color: rgba(255, 215, 0, 0.7); /* Amarillo con opacidad */
+    background-color: rgba(255, 215, 0, 0.7); 
 }
 
 .stat-special-defense .stat-fill {
-    background-color: rgba(135, 206, 235, 0.7); /* Azul claro con opacidad */
+    background-color: rgba(135, 206, 235, 0.7); 
 }
 
 .stat-speed .stat-fill {
-    background-color: rgba(255, 165, 0, 0.7); /* Naranja con opacidad */
+    background-color: rgba(255, 165, 0, 0.7); 
 }
 
-/* Agregar animación al mostrar las barras de estadísticas */
+
 .stats-container {
-    animation: slideIn 1s forwards; /* Animación de deslizamiento para las barras de estadísticas */
-    opacity: 0; /* Establecer la opacidad inicialmente como 0 */
+    animation: slideIn 1s forwards; 
+    opacity: 0; 
 }
 
 @keyframes slideIn {
     from {
         opacity: 0;
-        transform: translateY(50px); /* Desplazar hacia abajo */
+        transform: translateY(50px); 
     }
     to {
         opacity: 1;
-        transform: translateY(0); /* Sin desplazamiento */
+        transform: translateY(0); 
     }
 }
 
 
 
 
-/* Símbolos mejorados según el tipo de Pokémon */
 
 .type-symbol {
     width: 95px;
     height: 95px;
-    background-size: contain; /* Usar contain para ajustar el tamaño del símbolo */
+    background-size: contain; 
     background-repeat: no-repeat;
     position: absolute;
     top: 20px;
     right: 20px;
     border-radius: 50%;
 }
-/* Símbolos según el tipo de Pokémon */
+
 .bug .type-symbol {
     background-image: url('Medalla_de_Gimnasio_Bicho.png');
 }
@@ -290,7 +287,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 9999; /* Asegúrate de que el mensaje esté por encima de otros elementos */
+    z-index: 9999; 
 }
 .evolution-container {
     margin-bottom: 20px;
